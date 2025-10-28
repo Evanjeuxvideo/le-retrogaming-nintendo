@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="application-name" content="La Game Boy"/>
+    <meta name="msapplication-TileColor" content="#00FFFF"/>
+    <meta name="msapplication-TileImage" content="image gb/icon_GB.ico"/>
+    <meta property="og:locale" content="fr"/>
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:locale" content="fr"/>
+    <link rel="icon" sizes="144x144" href="image gb/icon_GB.ico">
+    <link rel="apple-touch-icon" href="image gb/icon_GB.ico"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="image gb/icon_GB.ico"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="image gb/icon_GB.ico"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="image gb/icon_GB.ico"/>
+    <link rel="apple-touch-icon-precomposed" href="image gb/icon_GB.ico"/>
+    <link rel="shortcut icon" href="image gb/icon_GB.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>La Console Gameboy</title>
+    <style>
+        #madiv {
+            background-color: rgb(128, 128, 128);
+            height: 50px;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: rgb(195, 255, 0);
+        }
+
+
+        #gblogo {
+            width: 100px;
+            height: auto;
+        }
+
+
+        #nompheriferiqueaccessoires {
+            background-color: gray;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+
+        #titrepheriferiqueaccessoires {
+            text-align: center;
+            color: rgb(195, 255, 0);
+            font-size: 24px;
+        }
+
+
+        #descpheriferiqueaccessoires {
+            clear: both;
+        }
+
+        #textdescaccessoires {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        #gbimggameboycamera {
+            margin: 10px;
+            float: left;
+            width: 70px;
+        }
+
+
+        #textgameboyprinter {
+            margin-top: 40px;
+            font-size: 25px;
+        }
+
+
+        #gbimggameboyprinter {
+            margin-left: 10px;
+            margin-top: 20px;
+            float: left;
+            width: 100px;
+        }
+
+
+        #gbimgcablelink {
+            margin: 0px;
+            float: left;
+            width: 200px;
+        }
+
+
+        #textdescpheriferique {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+
+        #barcodeboy {
+            margin: 0px;
+            float: left;
+            width: 200px;
+        }
+
+
+        #nomjeuxvideo {
+            background-color: gray;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+
+        #titrejeuxvideo {
+            text-align: center;
+            color: rgb(195, 255, 0);
+            font-size: 24px;
+        }
+
+
+        #descjeuxvideo {
+            clear: both;
+        }
+
+
+        #textdescjeuxvideo {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        #logotetris {
+            margin: 10px;
+            float: right;
+            width: 150px;
+        }
+
+
+        #boitetetris {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+
+        #titrelistedejeux {
+            margin: 120px;
+        }
+
+
+        .listejeux {
+            background-color: white;
+            color: black;
+            min-height: 400px;
+            margin: 15px 0;
+        }
+
+
+        .image-galerie {
+            width: 200px;
+            display: inline-block !important;
+        }
+
+
+        #footer {
+            display: block;
+            block-size: 151px;
+            background-color: #0FFFFF;
+            color: black;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 30px;
+            background-image: url("image gb/Nintendo_logo.png");
+            background-size: 630px;
+            background-position: center;
+            border: double #0033ff 10px;
+        }
+
+        
+        #footer:hover {
+            display: block;
+            background-color: #0FFFFF;
+            color: black;
+            font-size: 20px;
+            transform: rotate(180deg);
+            background-image: url("image gb/Nintendo_logo.png");
+            block-size: 151px;
+            background-size: 630px;
+            background-position: center;
+            border: double #0033ff 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+<div id="madiv" class="row">
+    <div class="col-12"><a href="index.html">Cliquer ici pour revenir a la page d'accueil</a><img src="image gb/Game_Boy_logo.png" id="gblogo"/><b>Gameboy</b></div>
+</div>
+<div id="nompheriferiqueaccessoires" class="row">
+    <div class="col-12">
+        <div>
+            <div id="titrepheriferiqueaccessoires">Les Phériphériques Et Accessoires de La Gameboy</div>
+            <div id="descpheriferiqueaccessoires">
+                <div id="textdescaccessoires">
+                    <p>Les Phériphériques sont des dispositifs connecté à un système et qui ajoute à ce dernier des fonctionnalités.
+                        <br>Les Accessoires sont des élément matériel requis pour utiliser une console de jeu vidéo ou qui enrichit l'expérience de jeu.
+                        <br>
+                        <h1>Accessoires de la Gameboy</h1>
+                    </p>
+                    <h2>La Game Boy Camera</h2>
+                    <p style="min-height: 120px;">
+                            <img src="image gb/Game_Boy_Camera.png" id="gbimggameboycamera" width="200"/>
+                            La Game Boy Camera est une Camera pour la Gameboy Elle est sortie le 21 Février 1998 au Japon.
+                            La Game Boy Camera Prend des Photos en noir et blanc d'une taille de 128 sur 112 pixels Et permet de stocker 40 photos.
+                    </p>
+
+                    <div id="textgameboyprinter">
+                        <h2>La Game Boy Printer</h2>
+                        <p>
+                            <img src="image gb/Game_Boy_Printer.png" id="gbimggameboyprinter" width="200"/>
+                            La Game Boy Printer est une imprimante thermique qui se branche directement sur la Game Boy via un câble Elle est sortie en 1998 au Japon.
+                            Et commercialisée Jusque'en 2003 Vendue avec des rouleaux de papier autocollants de 3.8 cm de large. La Game Boy Printer est compatible avec toutes les consoles Game Boy et Game Boy Advance.
+                            Elle permet d'imprimer des images de certains titres Game Boy et Game Boy Color.
+                        </p>
+                        <h3>Le Câble link</h3>
+                        <p>
+                            <img src="image gb/Cable_link.jpeg" id="gbimgcablelink" width="200"/>
+                            Le câble link est un câble permettant aux joueurs de connecter des Game Boys de tous types pour les jeux multijoueurs et échanger des donnée.
+                            Selon les jeux un Game Link Cable peut être utilisé pour relier deux jeux compatibles comme Pokémon Rouge et Bleu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="textdescpheriferique"><p><h1>Le Phériphériques de la Game Boy</h1></p>
+                <h2>Le Barcode Boy</h2>
+                <p>
+                    <img src="image gb/Barcode_Boy.jpeg" id="barcodeboy" width="200">
+                    Le Barcode Boy est un petit périphérique de la Game Boy crée par Namcot uniquement Sortie au Japon en décembre 1992.
+                    Il se fixe au dos de la Game Boy Et permet de scanner des cartes codes-barres. Les cartes offrant au joueur différentes fonctionnalités dans les jeux.
+                    Des jeux tels que Monster Maker: Barcode Saga ont été crée pour être utilisés avec le Barcode Boy.
+                    Le Barcode Boy a été présenté dans un article du Nintendo Power V56 en 1994.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nomjeuxvideo" class="row">
+    <div class="col-12">
+        <div>
+            <div id="titrejeuxvideo">Les Jeux de La Game Boy</div>
+            <div id="descjeuxvideo">
+                <div id="textdescjeuxvideo">
+                    <p>Voici les Jeux vidéo de la Game Boy.
+                        <h1>Le Jeux le Plus connue,vendu de la Game Boy.</h1>
+                    </p>
+                    <h2>Tetris</h2>
+                        <img src="image gb/Tetris_Logo.jpeg" id="logotetris" width="200">
+                        <img src="image gb/Tetris_Boite.jpeg" id="boitetetris" width="200">
+                        Tetris est un jeu vidéo de puzzle sortie le 14 juin 1989 au Japon, le 28 septembre 1990 en Europe Ces La version la plus célebre de Tetris qui s'est vendu à 35 millions d'exemplaires dans le monde. C'est le Jeux le plus vendu de la Game Boy.
+                        Le Jeux originnal a été crée et Imaginé par Alekseï Pajitnov à partir de 1984. Et Nintendo a obtenu les droits du Jeux grace a un accord avec le gouvernement de l'URSS quelques mois avant la sortie du jeu en mars 1989.
+                        Le jeu est inclus avec la Game Boy lors de sa sortie en 1989. Le but du est de disposer les pièces (appelées tétrimino) qui tombent du haut de l'écran les unes après les autres afin de réaliser des lignes. Si les pièces arrivent en haut de l'écran le joueur a perdu et obtient donc un score.
+                        C'est le premier jeu compatible avec le Câble link. Il le faut pour pouvoir jouer l'un contre l'autre. Le jeu est réédité sur la console virtuelle de la 3DS en 2011 avant d'être retiré en janvier 2015.
+                        <div id="titrelistedejeux">
+                            <h3>Voici une liste de Jeux de la Game Boy</h3>
+                        </div>
+                        
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Pokémon Vert</p>
+                                    
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Pokemon_Vert_logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Vert_ecran_titre.png" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Vert_Jeux.png" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Vert_Combat.png" class="image-galerie" width="200">
+                                    </div>
+                                    Est un jeu vidéo de rôle sortie le 27 Féfrier 1996 au Japon uniquement et est le premier jeux de la licence Pokémon avec Pokémon Version Rouge.
+                                    Les jeux ce sont écoulé à 10,22 millions d'exemplaires. les Jeux introduit la première génération de Pokemon.
+                                    Dans la Région de Kanto Le Joueur (par défaut Red) qui vie au Bourg Palette Rêves de Devenir maitre Pokemon. il va récupérer son premier pokemon dans le labo du Prof Chen.
+                                    Apres avoir choisi son Pokemon et c'etre battue avec son rival Blue ou Green le Prof Chen donne un Pokédex et demande de le compléter en trouvent les 151 Pokemon.
+                                    Red part Récupérer les 8 badge d'arene pour défier la ligue Pokemon et devenir Maitre Pokemon.
+
+                                    
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Pokémon Rouge et Bleue</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Pokemon_Rouge_et_Bleue_Logo.jpeg" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Rouge_ecran_titre.png" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Bleue_ecran_titre.png" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Rouge_et_Bleue_Kanto.png" class="image-galerie" width="200">
+                                        <img src="image gb/Pokemon_Rouge_et_Bleue_Combat.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    Est un jeu vidéo de rôle sortie le 28 Septembre 1990 en Europe (jamais sortie au Japon). et sont les premiers jeux de la licence Pokémon en Europe.
+                                    Les jeux ce sont écoulé à 32,55 millions d'exemplaires dans le monde. les Jeux introduit la première génération de Pokemon.
+                                    Dans la Région de Kanto Le Joueur (par défaut Red) qui vie au Bourg Palette Rêves de Devenir maitre Pokemon. il va récupérer son premier pokemon dans le labo du Prof Chen.
+                                    Apres avoir choisi son Pokemon et c'etre battue avec son rival Blue ou Green le Prof Chen donne un Pokédex et demande de le compléter en trouvent les 151 Pokemon.
+                                    Red part Récupérer les 8 badge d'arene pour défier la ligue Pokemon et devenir Maitre Pokemon.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Super Mario Land</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Super_Mario_Land_Logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_affiche.jpeg" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_ecran_titre.webp" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_Niveau_1-1.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    Est un jeu vidéo de plates-formes sortie le 21 Avril 1989 au Japon, le 28 Septembre 1990 en Europe.
+                                    l s'agit du premier jeu de plates-formes sur la Console. C'est un vrai succès commercial puisqu'il se vend entre 14 et 18 millions de copies à travers le monde et le jeu fait partie des jeux les plus vendus au Japon.
+                                    Histoire : Un jour dans le paisible royaume de Sarasaland un mystérieux personnage nommé Tatanga débarque à Sarasaland et enlève la Princesse Daisy afin de l'épouser. Mario qui était a Sarasaland part à la recherche de Tatanga en voyageant à travers Sarasaland.
+                                    Il retrouve et bat finalement Tatanga et son vaisseau de combat Pagosu et sauve Daisy.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Super Mario Land 2: 6 Golden Coins</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Super_Mario_Land_2_Logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_2_affiche.png" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_2_ecran_titre.webp" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_2_Niveau.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    Est un jeu vidéo de plates-formes sortie le 21 Octobre 1992 au Japon, en 1992 en France.
+                                    l s'agit du 2eme jeu de série Super Mario Land à sortir sur Game Boy et est la Suite de Super Mario Land. Le jeu s'est vendu à environ 11,18 millions d'exemplaires dans le monde.
+                                    Histoire : pendant que Mario affrontait Tatanga son pays a été squatté par un nouveau méchant, Wario le double maléfique de Mario. Et en plus la porte du château est verrouillée.
+                                    Pour l'ouvrir Mario devra aller chercher 6 pièces d'or éparpillées dans 6 Zones du Royaume.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Wario Land: Super Mario Land 3</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Super_Mario_Land_3_Logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_3_affiche.webp" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_3_ecran_titre.webp" class="image-galerie" width="200">
+                                        <img src="image gb/Super_Mario_Land_3_Niveau.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    Est un jeu vidéo de plates-formes sortie le 21 Janvier 1994 au Japon, le 13 mai 1994 en Europe.
+                                    l s'agit du 3eme jeu de série Super Mario Land à sortir sur Game Boy et est la Suite de Super Mario Land 2. Le jeu s'est vendu à environ 5,19 millions d'exemplaires dans le monde.
+                                    Histoire : Peu après sa défaite contre Mario Wario continue de rêver de posséder un grand château. Il avait entendu une rumeur que de les pirates de l'Île-Cuisine avait de l'Or. 
+                                    et n'écoutant que sa cupidité il décide de se lancer à l'assaut des Pirate et de leur voler leur argent et leur trésor afin de se payer le château de ses rêves.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Kirby's Dream Land</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Kirby's_Dream_Land_Logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Kirby's_Dream_Land_affiche.jpeg" class="image-galerie" width="200">
+                                        <img src="image gb/Kirby's_Dream_Land_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image gb/Kirby's_Dream_Land_Niveau.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    Est un jeu vidéo de plates-formes développé par HAL Laboratory et édité par Nintendo sortie le 27 avril 1992 au Japon, le 5 novembre 1992 en France.
+                                    Premier épisode de la série Kirby. IL est plutôt bien accueilli lors de sa sortie par la presse spécialisée. Le jeu s'est vendu à 1,3 millions d'exemplaires dans le monde.
+                                    C'est L'histoire de Kirby un petit être en forme de boule qui vit dans le royaume Dream Land sur la paisible planète Popstar. Mais un jour Le Roi Dadidou et ses sbires descendent de leur montagne pour voler la nourriture et les étoiles scintillantes magiques de Popstar.
+                                    Kirby décide de mettre fin à la famine et se lance à la recherche du Roi Dadidou. Avant d'arriver au mont Dadidou Kirby doit traverser Dream Land.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>The Legend of Zelda: Link's Awakening</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Zelda_Link's_Awakening_Logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Zelda_Link's_Awakening_affiche.jpg" class="image-galerie" width="200">
+                                        <img src="image gb/Zelda_Link's_Awakening_ecran_titre.png" class="image-galerie" width="200">
+                                        <img src="image gb/Zelda_Link's_Awakening_Link_bateau.png" class="image-galerie" width="200">
+                                        <img src="image gb/Zelda_Link's_Awakening_Link_reveil.png" class="image-galerie" width="200">
+                                        <img src="image gb/Zelda_Link's_Awakening_Link_Mer.png" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo d'action-aventure sortie le 6 Juin 1993 au Japon, le 1 Décembre 1993 en Europe.
+                                    Link's Awakening a été un succès critique et commercial et a eté très bien accueilli par la presse spécialisée il ce venda a 3,8 millions d'exemplaires dans le monde Il s'agit du quatrième épisode de la série The Legend of Zelda.
+                                    Les évènements de ce jeux se déroulent avant ceux de A Link Between Worlds (sortis en 2013) et après ceux de The Legend of Zelda: Oracle of Seasons et Oracle of Ages (sortis en 2001).
+                                    Apres que Link (le meme Link que dans Link to the past) est battue Ganon a Labrynna (dans Oracle of Seasons et Oracle of Ages) il décide de renter a Hyrule en Bateau.
+                                    Mais sur le chemin du retour une tempetes fais Rage et coule le bateau de Link il finit par échouer sur une île du nom de Île Cocolint. Il se fait recueillir par une jeune fille nommée Marine qui vit avec son papa Tarkin au village des Mouettes.
+                                    Apres avoir repris connaissance Link part explorer l'ile et rencontre un Hibou qui lui dit que pour Quiter l'ile il doit réveiller le Poisson-Rêve qui vit dans un Gros oeuf au sommet de la montagne.
+                                    Pour réveiller le Poisson-Rêve Link doit Récupérer les 8 Instruments des Sirènes qui sont dans 8 donjons. Link Récupere les Instruments des Sirènes et réveille le Poisson-Rêve qui lui dit que ce N'etait qu'un Réve et Tout Ce qu'il a vu Existe Pas.
+                                    l'ile Cocolint, le hibou, Marine, le Poisson-Rêve disparaissent Et Link ce réveille en pleine mer sur les planches de son bateau détruit. Personne ne sait ce qu'il est advenu de CE Link après cela mais on peut supposer qu'il a réussi a Rentrer a Hyrule chez lui.
+
+                                    
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Donkey Kong Land</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Donkey_Kong_land_logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Donkey_Kong_land_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image gb/Donkey_Kong_land_jeux.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo de plates-formes développée par Rare sortie le 27 Juillet 1995 au Japon, le 24 Aout 1995 en Europe.
+                                    Il a reçu des critiques positives et a été nommé meilleur jeu Game Boy de 1995 il ce venda a 3,91 millions d'exemplaires dans le monde.
+                                    L'histoire débute juste après les événements de Donkey Kong Country. Cranky Kong est fou de jalousie par la réussite de Donkey et Diddy Kong d'avoir raporter le stock de banane.
+                                    Décide de leur lancer un défi parcourir à nouveau l'île et vaincre une nouvelle fois les Kremlings mais en 1 Jour Sinon passé ce délai il Apellera King K. Rool pour qu'il vienne dérober le stock de bananes.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Dr. Mario</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image gb/Dr_Mario_logo.png" class="image-galerie" width="200">
+                                        <img src="image gb/Dr_Mario_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image gb/Dr_Mario_jeux.bmp" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo de puzzle à bloc tombant sortie le 27 Juillet 1990 au Japon, le 1 Décembre 1990 en Europe.
+                                    Le jeu s'est vendu à 2,8 millions d'exemplaires dans le monde. Mario est devenu Docteur et doit éradiquer des virus mortels de 3 Couleur Rouge, Bleue, Jeune grace a des capsule.
+                                    Ces capsules disparaissent si quatre Virus de même couleur sont alignés. Le niveau est terminé lorsque tous les virus ont disparu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p id="footer">
+        Site Crée et coder par Evan B avec Visual Studio Code
+    </p>
+</footer>
+<link rel="stylesheet" href="owl.carousel.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js" data-cover></script>
+<script src="js/owl.support.js" data-cover></script>
+<script src="js/owl.autoplay.js" data-cover></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

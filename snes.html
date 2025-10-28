@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="application-name" content="La Super Nintendo"/>
+    <meta name="msapplication-TileColor" content="#00FFFF"/>
+    <meta name="msapplication-TileImage" content="image snes/icon_Snes.ico"/>
+    <meta property="og:locale" content="fr"/>
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:locale" content="fr"/>
+    <link rel="icon" sizes="144x144" href="image snes/icon_Snes.ico">
+    <link rel="apple-touch-icon" href="image snes/icon_Snes.ico"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="image snes/icon_Snes.ico"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="image snes/icon_Snes.ico"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="image snes/icon_Snes.ico"/>
+    <link rel="apple-touch-icon-precomposed" href="image snes/icon_Snes.ico"/>
+    <link rel="shortcut icon" href="image snes/icon_Snes.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>La Console Super Nintendo</title>
+
+    <style>
+        #madiv {
+            background-color: #c521db;
+            height: 50px;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: yellow;
+        }
+
+
+        #sneslogo {
+            width: 20px;
+            height: auto;
+        }
+
+
+        #nompheriferiqueaccessoires {
+            background-color: #c521db;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+
+        #titrepheriferiqueaccessoires {
+            text-align: center;
+            color: yellow;
+            font-size: 24px;
+        }
+
+
+        #descpheriferiqueaccessoires {
+            clear: both;
+        }
+
+        #textdescaccessoires {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        #snesimgnintendoscope {
+            margin: 10px;
+            float: left;
+            width: 200px;
+        }
+
+
+        #textsupergameboy {
+            margin: 20px;
+            font-size: 25px;
+        }
+
+
+        #snesimgsupergameboy {
+            margin: 0px;
+            float: left;
+            width: 150px;
+        }
+
+
+        #textdescpheriferique {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        #satellaviewsnes {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+
+        #satellaviewseul {
+            margin-top: 30px;
+            margin-left: 10px;
+            float: left;
+            clear: left;
+            width: 150px;
+        }
+
+
+        #nplaytation {
+            margin: 10px;
+            float: left;
+            width: 180px;
+        }
+
+
+        #nomjeuxvideo {
+            background-color: #c521db;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+
+        #titrejeuxvideo {
+            text-align: center;
+            color: yellow;
+            font-size: 24px;
+        }
+
+
+        #descjeuxvideo {
+            clear: both;
+        }
+
+
+        #textdescjeuxvideo {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        #logosupermarioworld {
+            margin: 10px;
+            float: right;
+            width: 150px;
+        }
+
+
+        #affichesupermarioworld {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+
+        #titrelistedejeux {
+            margin: 120px;
+        }
+
+
+        .listejeux {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            min-height: 400px;
+            margin: 15px 0;
+        }
+
+
+        .image-galerie {
+            width: 200px;
+            display: inline-block !important;
+        }
+
+
+        #footer {
+            display: block;
+            block-size: 151px;
+            background-color: #0FFFFF;
+            color: black;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 30px;
+            background-image: url("image snes/Nintendo_logo.png");
+            background-size: 630px;
+            background-position: center;
+            border: double #0033ff 10px;
+        }
+
+
+
+        #footer:hover {
+            display: block;
+            background-color: #0FFFFF;
+            color: black;
+            font-size: 20px;
+            transform: rotate(180deg);
+            background-image: url("image snes/Nintendo_logo.png");
+            block-size: 151px;
+            background-size: 630px;
+            background-position: center;
+            border: double #0033ff 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="madiv" class="row">
+            <div class="col-12"><a href="index.html">Cliquer ici pour revenir a la page d'accueil</a><img src="image snes/icon_Snes.ico" id="sneslogo"/><b>Super Nintendo</b></div>
+    </header>
+
+<div id="nompheriferiqueaccessoires" class="row">
+    <div class="col-12">
+        <div>
+            <div id="titrepheriferiqueaccessoires">Les Phériphériques Et Accessoires de la Super Nintendo</div>
+            <div id="descpheriferiqueaccessoires">
+                <div id="textdescaccessoires">
+                    <p>Les Phériphériques sont des dispositifs connecté à un système et qui ajoute à ce dernier des fonctionnalités.
+                        <br>Les Accessoires sont des élément matériel requis pour utiliser une console de jeu vidéo ou qui enrichit l'expérience de jeu.
+                        <br>
+                        <h1>Accessoires de la Super Nintendo</h1>
+                    </p>
+                    <h2>Le Super Scope</h2>
+                    <p style="min-height: 120px;">
+                            <img src="image snes/Nintendo_scope.jpeg" id="snesimgnintendoscope" width="200"/>
+                            Le Super Scope (ou Nintendo Scope en Europe et en Australie) est un pistolet optique qui a la forme d'un lance-roquette. 
+                            Il est sortie le 21 Juin 1993 au Japon, en Octobre 1992 en Europe et en Australie. Et est utilisable avec quelle que Jeux de la Super Nintendo.
+                    </p>
+
+                    <div id="textsupergameboy">
+                        <h2>Le Super Game Boy</h2>
+                        <p>
+                            <img src="image snes/Super-Game-Boy.png" id="snesimgsupergameboy" width="200"/>
+                            Le Super Game Boy est une cartouche adaptateur pour la Super Nintendo, qui rentre dans le port cartouche de celle-ci. sortie le 14 juin 1994 au Japon, et courant 1994 en Europe.
+                            Et permet de jouer à des cartouches Game Boy et Game Boy Color sur une Super Nintendo. il est possible d'y jouer en couleur et sur un écran de téléviseur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="textdescpheriferique"><p><h1>Les Phériphériques Les plus connue de la Super Nintendo</h1></p>
+                <h2>Le Satellaview</h2>
+                <p>
+                    <img src="image snes/Satellaview-+-snes.png" id="satellaviewsnes" width="200"/>
+                    Le Satellaview (Également connu sous les initiales BS-X) est un périphérique de modem satellite produit par Nintendo (autrement dit une extension) pour la Super Famicom Sortie le 23 Avril 1995 au Japon (jamais sortie en Europe) et une fin de production le 30 Juin 2000.
+                    Le Satellaview est née d'une collaboration entre Nintendo et St.GIGA et se connecte à la Super Famicom via le port extension situé sous la console. Et fonctionne Avec une cartouche BS-X et une carte mémoire de 8 Mbit.
+                    Et permettait aux joueurs de télécharger des jeux, des magazines et d'autres médias via diffusions par satellite fournies par la société japonaise St.GIGA.
+                    <img src="image snes/Satellaview_Seul.png" id="satellaviewseul" width="200"/>
+                    Pour utiliser la Satellaview les joueurs devait acheté un tuner satellite de diffusion (BS)(Un tuner satellite est un dispositif électronique capable de traiter les signaux des chaînes TV qui sont captés par une antenne parabolique.) spécial directement auprès de St.GIGA
+                    Le premier jeu à avoir été diffusé fut BS Zelda. Durant la première année du Satellaview, il était possible de consulter des informations en ligne comme des reportages audio et vidéo, Le contenu était actualisé régulièrement.Un total de 114 jeux sont sortis pour Satellaview.
+                    Le dernier jeu conçu pour le Satellaview sortit en 1999. à la suite de quoi Nintendo cessa définitivement d'alimenter le service en nouveautés et se retira du projet, seul le service de téléchargement resta actif sans proposer de nouveautés.
+                    En l'absence de nouveaux programmes, St.GIGA gardera le service en activité jusqu'en juin 2000 mais ne peut que proposer des rediffusions.Le service prit fin le 30 juin 2000.
+                </p>
+                <h2>Super Nintendo CD-ROM Adapter (La Nintendo Playtation)</h2>
+                <p>
+                    <img src="image snes/Nintendo_playtation.jpeg" id="nplaytation" width="200"/>
+                    La Nintendo Playstation de son autre nom la Super Nintendo CD-ROM Adapter (ou encore la SNES-CD)est un Phériphérique/Console crée par Nintendo Et Sony. Mais avant d'etre une Console c'etait surtout un périphérique destiné à la console Super Nintendo qui lui permettait de lire des jeux vidéo sur CD-ROM, mais qui n'a jamais été commercialisé.
+                    Un prototype a été crée en 1991. Son développement débute en 1988, quand Nintendo s'alie avec Sony pour produire un périphérique externe pour la Super Nintendo, capable de lire des CD-ROM. En meme temps Sony désire commercialiser une console capable d'utiliser les deux types de jeux, les jeux Super Nintendo et les jeux SNES-CD.
+                    Nintendo se rend compte que l'accord passé accorde à Sony les droits sur tous les jeux au format SNES-CD. Nintendo avait en effet sous-estimé leur potentiel Mais en trois ans, les lecteurs CD de Sony commencent à envahir les salons et Nintendo se rend compte que le contrat qu'il a signé l'oblige à faire une croix sur ses fameuses royalties.
+                    Et trouve une solution de recours négocier un partenariat plus favorable avec Philips. Mais à cause d'un désaccord sur les droits de licence des jeux entre Sony et Nintendo, En juin 1991 Nintendo annonce s'etre alie avec Philips sans en informer Sony une alliance qui donnerait le pouvoir total à Nintendo sur ses licences sur les machines de Philips.
+                    L'annonce fut un véritable choc pour sony qui avait juste décidé, la nuit précédente, du nom  du projet sous la marque PlayStation. Sony pensa arrêter les recherches mais continue a développer sa Console (PlayStation) Mais Nintendo interdis a Sony utiliser les droit sur le nom PlayStation. Le juge fédéral a finalement refusé l'interdiction.
+                    Ainsi en octobre 1991 le premier modèle de la Sony PlayStation a été révélé environ 200 prototypes sont créés. En 1992 un accord est trouvé permettant à Sony de produire des périphériques compatibles avec la Super Nintendo. Mais Nintendo garde le contrôle sur les droits des jeux. Finalement aucun périphérique n'est produit.
+                    Sony préfère finalement développer sa propre console de nouvelle génération, la PlayStation mais aucun périphérique ne sera créé pour la Super Nintendo. En 2015 plusieurs photos et vidéos d'un prototype sont diffusées sur internet. Il s'agis d'un prototype de la Sony PlayStation portant le nom de « Sony PlayStation SFX-100 ».
+                    Avec une cartouche Super Famicom et une manette de Super Nintendo avec écris dessus Sony PlayStation. Le nom de Nintendo ne figure nulle part sur cet appareil. c'est le Seul des 200 prototypes encore fonctionnelle du Sony Playstation SFX-100 qui avait été conçus les 199 autre ont été détruits.
+                    contrairement aux rumeurs nées pendant les années 1990 au sujet du partenariat entre Sony et Nintendo pour élaborer cette console  cette dernière est techniquement qu'une Super Nintendo greffée d'un lecteur de CD-ROM ainsi la puissance de la console reste en 16 bits. En 2020 La Nintendo Playstation c'est vendu au enchères pour 360.000 dollars, soit l’équivalent de 315.000 euros.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nomjeuxvideo" class="row">
+    <div class="col-12">
+        <div>
+            <div id="titrejeuxvideo">Les Jeux de la Super Nintendo</div>
+            <div id="descjeuxvideo">
+                <div id="textdescjeuxvideo">
+                    <p>Voici les Jeux vidéo de La Super Nintendo.
+                        <h1>Le Jeux le Plus connue,vendu de la Super Nintendo.</h1>
+                    </p>
+                    <h2>Super Mario World</h2>
+                        <img src="image snes/Super_Mario_World_Logo.png" id="logosupermarioworld" width="200">
+                        <img src="image snes/Super_Mario_World_affiche.jpeg" id="affichesupermarioworld" width="200">
+                        Super Mario World est un jeu vidéo de plates-formes en deux dimensions avec une vue à la troisième personne. Il sort au Japon le 21 Novembre 1990,en Europe le 11 Avril 1992. Super Mario World a eu un succès critique et commercial.
+                        Super Mario World s'est vendu à 20,61 millions d'exemplaires dans le monde, faisant de lui l'un des jeux vidéo les plus vendus de tous les temps. C'est le Jeu le plus vendu de la Super Nintendo.
+                        Synopsis: les frères Mario et Luigi décident de partir en vacances a Dinosaur Land  Tout en se reposant sur la plage La Princesse Peach est capturé par Bowser. Lorsque Mario et Luigi se réveillent et essaient de retrouver la Princesse Peach et après des heures de recherche.
+                        Ils trouve un œuf géant dans la forêt c'etait Yoshi Le Dinosaures qui leur dit que ses amis dinosaures ont également été emprisonnés dans des œufs par les Koopalings. Mario, Luigi et Yoshi ont décidé de sauver La Princesse Peach et les amis dinosaures de Yoshi.
+                        Et de battre le maléfique Bowser et ses Koopalings. Il traversant Dinosaur Land et arrivent finalement au château de Bowser où ils combattent Bowser dans une bataille finale et l'envoient voler dans le ciel. Ils sauvent La Princesse Peach et rétablissant la paix dans Dinosaur Land Fin.
+                        Le succès de Super Mario World lui a valu plusieurs rééditions. Super Mario All-Stars + Super Mario World, Console virtuelle de la Wii. En 2002 Super Mario World est sortie sur Game Boy Advance sous le nom Super Mario World: Super Mario Advance 2.
+                        Super Mario World a aussi eu une série animée de 13 épisode du 14 Septembre 1991 au 7 Décembre 1991.
+                        <div id="titrelistedejeux">
+                            <h3>Voici une liste de Jeux de la Super Nintendo</h3>
+                        </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>The Legend of Zelda: A Link to the Past</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Zelda_link_to_the_past_logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Zelda_Link_to_the_past_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Zelda_link_to_the_past_carte_Hyrule.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Zelda_Link_to_the_past_hyrule.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo d'action-aventure sortie le 21 Novembre 1991 au Japon, le 24 Septembre 1992 en Europe.
+                                    A Link to the Past est acclamé par la presse et est largement qualifié de chef-d’œuvre il ce venda a 4,7 millions d'exemplaires dans le monde Il s'agit du troisième épisode de la série The Legend of Zelda.
+                                    C'est l'histoire de Link (un futur chevalier) qui dois sauver la Princesse Zelda capturer par Agahnim un magicien qui veux briser le sceau magique pour liberer Ganon enprisonner dans le Monde des ténèbres.
+                                    Link dois sauver les 6 jeune fille qui sont des descendantes des sept sages. A Link to the Past a eté porter sur Game Boy Advance sous le nom de The Legend of Zelda: A Link to the Past / Four Swords.
+                                    En 2013 un Jeux Zelda inspiré d'A Link to the Past sort sous le nom de The Legend of Zelda: A Link Between Worlds qui est considéré comme sa suite spirituelle.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Super Mario Kart</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Super_Mario_Kart_Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Super_Mario_Kart_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Super_Mario_Kart_Course.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo de course de karting sortie le 27 août 1992 au Japon, le 21 janvier 1993 en Europe.
+                                    Il a reçu des critiques positives et a été apprécié pour sa présentation. Le jeu s'est écoulé à 8,7 millions d'exemplaires dans le monde.
+                                    Super Mario Kart est le premier opus de la série Mario Kart. Mario et ces Amis Font des courses de kart pour savoir qui est le meilleurs pillote.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Super Mario World 2: Yoshi's Island</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Super_Mario_World_2_YI_Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Smw2-Yoshi's-Island-ecran-titre.jpg" class="image-galerie" width="200">
+                                        <img src="image snes/Smw2-Yoshi's-Island-Carte.webp" class="image-galerie" width="200">
+                                        <img src="image snes/Smw2-Yoshi's-Island-Jeux.webp" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeux vidéo de plate-forme sortie le 5 Août 1995 au Japon, en Décembre 1995 en France.
+                                    Le jeu s'est écoulé à 4,1 millions d'exemplaires dans le monde. C'est l'histoire d'une cigogne qui transportait bébé Mario et bébé Luigi.
+                                    Mais Kamek le chef des Magikoopa percute le paquets avec dedans bébé Mario et le fait tomber. Kamek grace a ces dons devine de bébé Mario et bébé Luigi seront une mennace pour Bowser (qui est lui aussi un bébé).
+                                    Alors il décide de Capturer bébé Mario et bébé Luigi sauf qu'il manque bébé Mario alors il envoient ces koopas chercher bébé Mario. bébé Mario c'est échouer sur l'île des Yoshis et est récuperer par Yoshi.
+                                    Ensemble bébé Mario et Yoshi vont essayer de battre bébé Bowser et de sauver bébé Luigi. Super Mario World 2: Yoshi's Island a eté porter sur Game Boy Advance sous le nom de Yoshi's Island: Super Mario Advance 3.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Super Mario All-Stars</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Super-Mario-all-stars-Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Super-Mario all-stars-ecran-titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Super-Mario-all-Stars-choisir-jeux.png" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeux vidéo de plate-forme sortie le 14 Juillet 1993 au Japon, le 16 Décembre 1993 en Europe.
+                                    Il s'agit d'une compilation qui contient un remake des quatre premiers jeux en deux dimensions de la série Super Mario.
+                                    Le succès de cette compilation en fit l'un des premiers Million seller de la Super Nintendo. Et il est l'un des jeux les plus vendus de la console.
+                                    Le jeu s'est écoulé à 10,55 millions d'exemplaires dans le monde. Super Mario All-Stars est une compilation des jeux NES : Super Mario Bros., Super Mario Bros.: The Lost Levels (version japonaise de Super Mario Bros. 2).
+                                    Super Mario Bros. 2 (version occidentale) et Super Mario Bros. 3. Super Mario All-Stars + Super Mario World est Une version améliorée de la compilation avec le jeu Super Mario World en supplément.
+                                    En 2010 une Édition limitée du jeux sort Pour le 25e anniversaire de Super Mario Bros.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Super Mario RPG: Legend of the Seven Stars</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Super_Mario_rpg_Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Super_Mario_rpg_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Super_Mario_rpg_personage.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Super_Mario_rpg_Combat.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    Ou Super Mario RPG: la légende des sept étoiles (en Français) est un jeu vidéo d'action-RPG développé par Square et édité par Nintendo.
+                                    Sortie le 9 mars 1996 au Japon (jamais sortie en Europe a l'epoque). Il s'agit du premier jeu de rôle de la série Mario. À sa sortie, les critiques du jeu ont été très positives, notamment ses graphismes en 3D et son style visuel.
+                                    Le Jeux c'est vendu a 1,47 millions d'exemplaires au Japon. Mario et ses coéquipiers, décides de éliminer Smithy, le Grand antagoniste qui a dérobé les sept étoiles de la Route étoilée, route où tous les vœux sont exaucés.
+                                    Le Jeux est Finalement sortie en Europe sur la Super NES Mini le 29 septembre 2017 et est Resortie au Japon.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Donkey Kong Country</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Donkey_Kong_Country_Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Donkey_Kong_Country_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Donkey_Kong_Country_Jeux.bmp" class="image-galerie" width="200">
+                                        <img src="image snes/Donkey_Kong_Country_Carte.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeux vidéo de plate-forme développé par Rare et édité par Nintendo sortie le 26 novembre 1994 au Japon, le 21 novembre 1994 en Europe.
+                                    Donkey Kong Country est acclamé par la presse comme étant une très grande réussite. Le jeu s'est écoulé à 9,3 millions d'exemplaires dans le monde.
+                                    Premier jeu de la série Donkey Kong Country. sur l'île Donkey Kong Island sur laquelle vit la famille Kong. Mais Durant la nuit, les Kremlings dérobent le stock de bananes de Donkey Kong.
+                                    Donkey et Diddy Kong partent à sa recherche et s'opposent aux Kremlings jusqu'au galion du Gang-Planche où ils affrontent le chef King K. Rool afin de récupérer les bananes lâchement volées.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Mario's Super Picross</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Mario's_Super_Picross_Logo.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Mario_Super_Picross_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Mario_Super_Picross_choisir_niveau.bmp" class="image-galerie" width="200">
+                                        <img src="image snes/Mario_Super_Picross_Jeux.bmp" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo de puzzle sortie le 14 septembre 1995 au Japon (jamais sortie en Europe a l'epoque).
+                                    Il reprend le principe du picross, jeu de chiffres sur grille. Il n'est sorti à l'origine qu'au Japon.
+                                    Mais il est sorti par la suite sur la Console Virtuelle européenne de la Wii en 2007, celle de la Wii U en 2013 et sur le Switch Online SNES de la Nintendo Switch en septembre 2020.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>EarthBound</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/EarthBound_Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Earthbound_ecran_titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Earthbound_jeux.bmp" class="image-galerie" width="200">
+                                        <img src="image snes/Earthbound_Giygas.png" class="image-galerie" width="200">
+                                    </div>
+                                    Ou Mother 2 au Japon est un jeu vidéo de rôle développé par Ape et HAL Laboratory sortie le 27 Août 1994 au Japon (jamais sortie en Europe a l'epoque).
+                                    Deuxième Jeux de la série des Mother. Le Jeux c'est vendu a 518 000 Mille exemplaires au Japon. Un Jour un météore tombe près d'Onett, une petite ville paisible.
+                                    Ness part voir le météore et Rencontre une abeille mécanique Nommer Buzz Buzz. Qui lui dit qu'elle vient de dix ans dans le futur et que le monde a été détruit par le terrible Giygas aussi connu sous le nom du Destructeur Universel.
+                                    Et demande à Ness de collecter des mélodies dans une pierre sonore cacher dans huit sanctuaires pour arrêter la force maléfique de Giygas. En 2013 le Jeux sort enfin en Europe sur la console virtuelle de la Wii U.
+                                    Le jeu remporta un grand succès en France et sorira 3 ans plus tard (2016) sur la Console virtuelle de la NEW 3DS mais aussi 6 ans plus tard (2022) sur le Switch Online SNES de la Nintendo Switch.
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="listejeux">
+                                <p>Star Fox 2</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image snes/Star-Fox-2-Logo.png" class="image-galerie" width="200">
+                                        <img src="image snes/Star-Fox-2-boite.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Star-Fox-2-ecran-titre.jpeg" class="image-galerie" width="200">
+                                        <img src="image snes/Star-Fox-2-Jeux.jpeg" class="image-galerie" width="200">
+                                    </div>
+                                    est un jeu vidéo de type shoot 'em up développé par Nintendo et Argonaut Games pour la SUPER NINTENDO Il est le deuxième opus (chronologique) de la série Star Fox mais pas dans l'ordre de sortie. car dans l'ordre de Sortie il est le dernier jeux a Etre sortie.
+                                    Prévu pour sortir en 1996 Alors que le développement du jeu était terminé Nintendo décida d'annuler sa sortie en raison de l'arrivée imminente de la Nintendo 64. Bien que Nintendo n'a jamais révélé la raison officielle de son annulation.
+                                    Dans les années qui ont suivi l'annulation, diverses images ont été divulguées en ligne. Puis plus rien pendant 5 ans Non 10 ans Non 15 NON 21 Ans Plus tard Star Fox 2 Sortira ENFIN sur Super NES Mini le 29 septembre 2017 en Europe et le 5 octobre 2017 au Japon.
+                                    histoire : Apres que Andross (l'ennemi jurer de Fox McCloud) est été vaincu dans Star fox. Andross revient dans la galaxie de Lylat et lance une attaque contre la planete Corneria l'équipe Star Fox doit défendre Corneria avant qu'Andross la détruise.
+                                    Il est également sortie sur le Switch Online SNES de la Nintendo Switch en 2019.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p id="footer">
+        Site Crée et coder par Evan B avec Visual Studio Code
+    </p>
+</footer>
+<link rel="stylesheet" href="owl.carousel.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js" data-cover></script>
+<script src="js/owl.support.js" data-cover></script>
+<script src="js/owl.autoplay.js" data-cover></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

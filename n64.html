@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="application-name" content="La Nintendo 64" />
+    <meta name="msapplication-TileColor" content="#00FFFF" />
+    <meta name="msapplication-TileImage" content="image n64/icon_n64.ico" />
+    <meta property="og:locale" content="fr" />
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:locale" content="fr" />
+    <link rel="icon" sizes="144x144" href="image n64/icon_n64.ico">
+    <link rel="apple-touch-icon" href="image n64/icon_n64.ico" />
+    <link rel="apple-touch-icon" sizes="144x144" href="image n64/icon_n64.ico" />
+    <link rel="apple-touch-icon" sizes="144x144" href="image n64/icon_n64.ico" />
+    <link rel="apple-touch-icon" sizes="144x144" href="image n64/icon_n64.ico" />
+    <link rel="apple-touch-icon-precomposed" href="image n64/icon_n64.ico" />
+    <link rel="shortcut icon" href="image n64/icon_n64.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>La Console Nintendo 64</title>
+    <style>
+        #madiv {
+            background-color: black;
+            height: 50px;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: red;
+        }
+
+
+        #n64logo {
+            width: 20px;
+            height: auto;
+        }
+
+
+        #nompheriferiqueaccessoires {
+            background-color: black;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+
+        #titrepheriferiqueaccessoires {
+            text-align: center;
+            color: red;
+            font-size: 24px;
+        }
+
+
+        #descpheriferiqueaccessoires {
+            clear: both;
+        }
+
+        #textdescaccessoires {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #n64imgrumblepak {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+        #n64imgtransferpak {
+            float: left;
+            margin: 0px;
+            width: 250px;
+        }
+
+        #texttransferpak {
+            margin: 20px;
+            font-size: 25px;
+        }
+
+        #n64imgvru {
+            margin: 0px;
+            float: left;
+            width: 200px;
+        }
+
+        #textdescpheriferique {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .titre64dd {
+            color: rgb(255, 255, 255);
+        }
+
+        .titre64dd:hover {
+            color: red;
+        }
+
+        #n64n64dd {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+        #n64arriere {
+            margin-top: 100px;
+            margin-left: -160px;
+            float: left;
+            width: 150px;
+        }
+
+        #n64ddseul {
+            margin-top: 80px;
+            margin-left: 10px;
+            float: left;
+            width: 150px;
+        }
+
+        #n64expansionpak {
+            margin-top: 100px;
+            margin-left: 10px;
+            float: left;
+            width: 150px;
+        }
+
+        #nomjeuxvideo {
+            background-color: black;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        #titrejeuxvideo {
+            text-align: center;
+            color: red;
+            font-size: 24px;
+        }
+
+        #descjeuxvideo {
+            clear: both;
+        }
+
+        #textdescjeuxvideo {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .lejeuxplusconnuevendu {
+            color: rgb(255, 0, 0);
+        }
+
+        .lejeuxplusconnuevendu:hover {
+            color: #fff00b;
+        }
+
+        .lejeuxplusconnuevendu2 {
+            color: rgb(0, 0, 255);
+        }
+
+        .lejeuxplusconnuevendu2:hover {
+            color: blueviolet;
+        }
+
+        #logosupermario64 {
+            margin: 10px;
+            float: right;
+            width: 150px;
+        }
+
+        #affichesupermario64 {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+        #debutsupermario64 {
+            margin: 10px;
+            float: left;
+            width: 150px;
+        }
+
+        #titrelistedejeux {
+            margin: 120px;
+        }
+
+        .liste_jeux {
+            background-color: white;
+            color: black;
+            min-height: 400px;
+            margin: 15px 0;
+        }
+
+        .liste_jeux.active {
+            background-color: black;
+            color: white;
+            min-height: 400px;
+            margin: 15px 0;
+        }
+
+        .image-galerie {
+            width: 200px;
+            display: inline-block !important;
+        }
+
+        #footer {
+            display: block;
+            block-size: 151px;
+            background-color: #0FFFFF;
+            color: black;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 30px;
+            background-image: url("image n64/Nintendo_logo.png");
+            background-size: 630px;
+            background-position: center;
+            border: double #0033ff 10px;
+        }
+
+        #footer:hover {
+            display: block;
+            background-color: #0FFFFF;
+            color: black;
+            font-size: 20px;
+            transform: rotate(180deg);
+            background-image: url("image n64/Nintendo_logo.png");
+            block-size: 151px;
+            background-size: 630px;
+            background-position: center;
+            border: double #0033ff 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="madiv" class="row">
+        <div class="col-12"><a href="index.html">Cliquer ici pour revenir a la page d'accueil</a><img
+                src="image n64/n64.png" id="n64logo" /><b>Nintendo 64</b></div>
+    </div>
+    <div id="nompheriferiqueaccessoires" class="row">
+        <div class="col-12">
+            <div>
+                <div id="titrepheriferiqueaccessoires">Les Phériphérique Et Accessoires de la Nintendo 64</div>
+                <div id="descpheriferiqueaccessoires">
+                    <div id="textdescaccessoires">
+                        <p>Les Phériphériques sont des dispositifs connecté à un système et qui ajoute à ce dernier des
+                            fonctionnalités.
+                            <br>Les Accessoires sont des élément matériel requis pour utiliser une console de jeu vidéo
+                            ou qui enrichit l'expérience de jeu.
+                            <br>
+                        <h1>Accessoires de la Nintendo 64.</h1>
+                        </p>
+                        <h2>Le Rumble Pak</h2>
+                        <p style="min-height:120px;">
+                            <img src="image n64/N64_Rumble_Pak.png" id="n64imgrumblepak" width="200" />
+                            Le Rumble Pak, ou kit vibration, est un objet à encastrer sous la manette qui permet de
+                            faire vibrer celle-ci à Certains passages du jeu.
+                            Il a été dévoilé le 23 Novembre 1996 dans une présentation du Nintendo Space World.
+                        </p>
+
+                        <div id="texttransferpak">
+                            <h2>Le Transfer Pak</h2>
+                            <p>
+                                <img src="image n64/Nintendo_64_Transfer_Pak.png" id="n64imgtransferpak" width="200" />
+                                Le Transfer Pak, appelé 64GB Pak au Japon, est un accessoire amovible pour la manette
+                                Nintendo 64 qui s'insère dans son port d'extension. Il permet le transfert de données
+                                entre un jeu Nintendo 64 et une cartouche de jeu Game Boy ou Game Boy Color.
+                                Il est par exemple possible de transférer des Pokémon d'une version Game Boy vers la
+                                version Nintendo 64.Il est sortie le 1 août 1998.
+                            </p>
+                            <div style="clear: both;"></div>
+                            <h3>Le VRU (Voice Recognition Unit)</h3>
+                            <p style="min-height:120px;">
+                                <img src="image n64/N64_VRU.png" id="n64imgvru" width="200" />
+                                Le VRU (Voice Recognition Unit)jamais sorti en Europe, est un microphone utilisable avec
+                                les jeux Hey You, Pikachu!, Densha de Go! 64.
+                                Il est sortie le 12 Décembre 1998.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="textdescpheriferique">
+                    <p>
+                    <h1>Le Phériphériques le Plus connue de la Nintendo 64</h1>
+                    </p>
+                    <h2><span class="titre64dd">Le 64DD</span></h2>
+                    <p>
+                        <img src="image n64/N64_+_64DD.png" alt="Le 64DD est connecter a la Nintendo 64"
+                            title="Le 64DD est connecter a la Nintendo 64 la fente carer au milieu sert pour la cartouche de sauvgarde mais aussi pour le Transfer pak"
+                            id="n64n64dd" width="200" />
+                        Le Nintendo 64DD (Disk Drive) est un périphérique de la console Nintendo 64<br>Sortie au Japon
+                        le 1er Décembre 1999 jamais sortie en Europe<br>Et une Fin de production le 28 Février 2001.
+                        <img src="image n64/N64_arriere.jpeg" alt="Voici le dessous de La Nintendo 64"
+                            title="Voici le dessous de La Nintendo 64" id="n64arriere" width="200" />
+                        Le 64DD se connecte à la Nintendo 64 via le port extension situé sous la console. Il permet à la
+                        Nintendo 64 de lire des disques.
+                        Un Service en ligne permettait également de se connecter au réseau Randnet qui offrait
+                        différentes options comme le jeu en ligne, un service de messagerie ou la navigation sur
+                        Internet.
+                        Le 64DD permet de faire communiquer deux jeux, l'un sur la Nintendo 64 au format cartouche<br>et
+                        l'autre sur le 64DD au format disque. elle dispose aussi d'une horloge temps réel.
+                        <img src="image n64/64DD_Seul.jpeg" alt="Le 64DD quand il est pas brancher a la Nintendo 64"
+                            title="Le 64DD quand il est pas brancher a la Nintendo 64 la fente devent sert a inserer les cartouche dans le 64DD"
+                            id="n64ddseul" width="200" />
+                        <img src="image n64/Nintendo_64_Expansion_Pak.jpeg" alt="Le transfer pak avant et arriere"
+                            title="Le transfer pak avant et arriere" id="n64expansionpak" width="200" />
+                        Un câble spécial permet de connecter une Game Boy Color à une Nintendo 64 afin d'échanger des
+                        données ou de télécharger des jeux via le 64DD si il est montré.
+                        L’Expansion Pak, qui augmente la mémoire de la console de 4 Mio à 8 Mio, est indispensable pour
+                        faire fonctionner le 64DD.
+                        Après une seule année d'existence, Nintendo abandonne officiellement le 64DD en décembre 2000.
+                        Le service Randnet fonctionna du 1er décembre 1993 au 28 février 2001.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nomjeuxvideo" class="row">
+        <div class="col-12">
+            <div>
+                <div id="titrejeuxvideo">Les Jeux vidéo de La Nintendo 64</div>
+                <div id="descjeuxvideo">
+                    <div id="textdescjeuxvideo">
+                        <p>Voici les jeux vidéo de la Nintendo 64.
+                        <h1>Le Jeux le plus connue,vendu de la Nintendo 64.</h1>
+                        </p>
+                        <h2><span class="lejeuxplusconnuevendu">Super</span><span class="lejeuxplusconnuevendu2"> Mario
+                                64</span></h2>
+                        <img src="image n64/Super_Mario_64_Logo.png" alt="Le logo de Super Mario 64"
+                            title="Le logo de Super Mario 64" id="logosupermario64" width="200" />
+                        <img src="image n64/Super_Mario_64_affiche.jpeg" alt="L'affiche de Super Mario 64"
+                            title="L'affiche de Super Mario 64" id="affichesupermario64" width="200" />
+                        Super Mario 64 est un jeu de plates-formes Il sort au Japon le 23 Juin 1996,en Europe le 1er
+                        Mars 1997 et le 1er Septembre 1997 en France.Il est le premier jeu de la série entièrement en
+                        3D.
+                        Super Mario 64 est présenté pour la première fois au Nintendo Space World en novembre 1995.Super
+                        Mario 64 a été un immense succès critique et commercial.Il s’écoule à plus de onze millions
+                        d’exemplaires(11,89 M)à travers le monde.
+                        C'est le jeu le plus vendu de la Nintendo 64 et de la cinquième génération de consoles.Il est
+                        considéré comme l’un des titres les plus marquants de l’histoire du jeu vidéo et est une grande
+                        référence pour la cinquième génération de console.
+                        Il pose les bases du jeu vidéo en 3D et a été le premier jeu à offrir une caméra « libre » qui
+                        pouvait être contrôlée indépendamment du personnage. En raison de la popularité du jeu, des
+                        rumeurs à propos de bugs et secrets ont circulé rapidement après sa sortie.
+                        La rumeur la plus commune est que Luigi, le frère de Mario, est un personnage secret du jeu.
+                        Elle est alimentée par la présence dans la cour du château d’une stèle sur laquelle serait écrit
+                        « L is real 2401 » la lettre L désignerait Luigi et 2401 correspondrait à la date de sortie de
+                        Paper Mario aux États-Unis, le 4 février 2001 (2/4/01).
+                        Malheureusement Luigi fus jamais jouable dans Super mario 64 mais 9 ans plus tard il devient
+                        jouable dans Super mario 64 DS. Super mario 64 est aussi sortie sur la console virtuel de la
+                        Wii,Wii u, sur la console virtuel N64 de la Switch, et dans la conpilation Super Mario 3D All
+                        Stars.
+                        <img src="image n64/Super_Mario_64_debut.jpeg" alt="Le début de Super Mario 64"
+                            title="Le début de Super Mario 64 après l'introduction de la princesse Peach"
+                            id="debutsupermario64" width="200" />
+                        <div id="titrelistedejeux">
+                            <h3>Voici une liste de Jeux de la Nintendo 64</h3>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>The Legend of Zelda: Ocarina of Time</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/zelda_oot_logo.jpeg" class="image-galerie" width="200" />
+                                        <img src="image n64/Carte_Hyrule_Zelda_Oot.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/zelda_oot_plaine_hyrule.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/zelda_oot_3D_boite.jpg" class="image-galerie" width="200" />
+                                    </div>
+                                    est un jeu vidéo d'action-aventure sorti le 21 Novembre 1998 au Japon, le 11
+                                    Décembre 1998 en Europe.
+                                    Il connaît un succès critique et commercial phénoménal il est le jeu le plus vendu
+                                    en 1998 Au total, 7,6 millions de copies du jeu trouvent preneur.
+                                    C'est l'histoire de Link (un hylien) qui dois sauver la princesse Zelda capturer par
+                                    Ganondorf. Pour entrer dans le chateau de Ganondorf Link dois liberer les 6 sages.
+                                    Un remake 3D est sortie sur 3DS le 16 juin 2011 au Japon et un jour plus tard en
+                                    France.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>The Legend of Zelda: Majora's Mask</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Zelda_mm_Logo.png" class="image-galerie" width="200" />
+                                        <img src="image n64/zelda_mm_carte_Termina.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/zelda_mm_afiche.jpeg" class="image-galerie" width="200" />
+                                        <img src="image n64/zelda_mm_3D_logo.png" class="image-galerie" width="200" />
+                                        <img src="image n64/zelda-mm-3D_la_Lune.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/zelda_mm_3D_bourg-clocher.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/zelda_mm_3D_link_transformation.png" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo d'action-aventure sortie le 27 Avril 2000 au Japon, le 17 Novembre
+                                    2000 en Europe.
+                                    Il est salué par la presse spécialisée lors de sa sortie au total il Écoule à 3,3
+                                    millions d'exemplaires à travers le monde.
+                                    c'est la suite direct de Zelda Ocarina of Time. Après avoir sauver la princesse
+                                    Zelda Link parti a la recherche de sa feé Navi qui est parti. Link arivant dans une
+                                    foret ce fait attaquer par Skull kid qui lui vole sa jumant Epona.
+                                    Link porsuit Skull kid et tombe dans un trou skull kid transforme Link en Peste
+                                    mojo. Link arrive dans le Royaume de Termina a Bourg-clocher et aprend que dans 3
+                                    JOURS la LUNE va S'ecraser sur Termina. Pour empercher la LUNE de S'ecraser Link
+                                    dois faire Apelle au 4 Géants qui sont au sub,nord,ouest,est pour quilles s'arete la
+                                    LUNE DE MAJORA.
+                                    Un remake 3D est sortie sur 3DS le 13 février 2015 en Europe et un jour plus tard au
+                                    Japon.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>Mario Kart 64</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Mario_Kart_64_Logo.png" class="image-galerie" width="200" />
+                                        <img src="image n64/mario_kart_64_titre.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Mario_Kart_64_course.png" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo de course de karting en 3D sortie le 14 Décembre 1996 au Japon, le
+                                    24 Juin 1997 en Europe.
+                                    Il a reçu un succès critique et commercial retentissant. Le jeu s'est écoulé à 9,9
+                                    millions d'exemplaires dans le monde.
+                                    Mario Kart 64 est le second opus de la série Mario Kart et la suite de Super Mario
+                                    Kart sorti sur SNES.
+                                    Mario et ces Amis continue de faire des course de kart pour savoir qui est le
+                                    meilleurs pillote.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>mario party 1</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Mario_Party_Logo.jpeg" class="image-galerie" width="200" />
+                                        <img src="image n64/mario_party_1_titre.png" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/mario_party_1_intro.png" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/mario_party_1_plateau_dk.png" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo de type party game (jeux de plateaux) sortie le 18 Décembre 1998 au
+                                    Japon, le 19 Mars 1999 en Europe. Le jeu s'est écoulé à 2,70 millions d'exemplaires
+                                    dans le monde.
+                                    Il est le 1er jeux de la serie Mario Party. Mario et ces Amis ce dispute pour savoir
+                                    qui est le meilleurs heros
+                                    en s'afrontant dans plein de mini-jeux.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>mario party 2</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Mario_Party_2_Logo.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Mario_Party_2_titre.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Mario_Party_2_intro.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Mario_Party_2_plateau.webp" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo de type party game (jeux de plateaux) sortie le 17 Décembre 1999 au
+                                    Japon, le 12 Octobre 2000 en Europe. Le jeu s'est écoulé à 2,50 millions
+                                    d'exemplaires dans le monde.
+                                    Il est la suite du premier jeux Mario Party et est le 2eme jeux de la série des
+                                    Mario Party. mario et ces Amis ouvre un parc a theme du nom de Mario land.
+                                    Mais Wario est pas d'accord sur le nom et décide de le nommer Wario land. Mais tous
+                                    le monde est pas d'accord Alors la princesse Peach décide de le nommer Peach land.
+                                    Tous le monde ce dispute jusque'a que un koopa previenne Mario et ces Amis que
+                                    Bowser veut détruire le parc.
+                                    Alors Toad a une Idée celui qui batra Bowser sera une superstars et donnera son nom
+                                    au parc.
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>mario party 3</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Mario_party_3_Logo.jpeg" class="image-galerie"
+                                            width="150" />
+                                        <img src="image n64/Mario_Party_3_titre.jpeg" class="image-galerie"
+                                            width="150" />
+                                        <img src="image n64/Mario_Party_3_intro.jpeg" class="image-galerie"
+                                            width="150" />
+                                        <img src="image n64/Mario_Party_3_plateau_neige.png" class="image-galerie"
+                                            width="150" />
+                                    </div>
+                                    est un jeu vidéo de type party game (jeux de plateaux) sortie le 7 Décembre 2000 au
+                                    Japon, le 16 Novembre 2001 en Europe. Le jeu s'est écoulé à 1,91 millions
+                                    d'exemplaires dans le monde.
+                                    Il est le 3eme jeux de la série des Mario Party. Mario et ces Amis ce reposais quand
+                                    soudain L'etoile millénaire qui aparait tout les 1000 Ans tomba du ciel.
+                                    Alors pour décider qui garderais L'etoile millénaire Lakitue proposa que Mario et
+                                    ces Amis joue a Mario Party pour savoir qui est la superstars.
+                                    Mais soudain Mario et ces Amis ce font transporter dans la boite a Jeux. L'etoile
+                                    millénaire qui ces mi a Parler dicida que il faut etre une superstars pour le
+                                    Meriter.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>Pokémon Stadium</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Pokemon_stadium_Logo.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_boite.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_titre.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_menu.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_combat.jpeg" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo de la série Pokémon sortie le 30 Avril 1999 au Japon, le 7 Avril
+                                    2000 en Europe. Le jeu s'est écoulé à 5,46 millions d'exemplaires dans le monde.
+                                    Contrairement aux jeux principaux, Pokemon Stadium n'est pas une aventure. Il est un
+                                    jeu de combat qui permet au joueur de faire des combats de Pokémon sous forme de
+                                    tournois.
+                                    Le joueur peut utiliser des Pokémon standards, disponibles dans le jeu, ou les
+                                    Pokémon qu'il a capturés dans la version Rouge, Bleu ou Jaune du jeu Game Boy, grâce
+                                    à un Transfer Pak qui permet d'utiliser le jeu Game Boy dans Pokémon Stadium.
+                                    Uniquement la 1ere Génération de Pokemon est disponibles dans le jeux.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>Pokémon Stadium 2</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Pokemon_Stadium_2_logo.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_2_boite.png" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_2_titre.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_2_menu.webp" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Pokemon_Stadium_2_combat.jpeg" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo de la série Pokémon sortie le 14 Décembre 2000 au Japon, le 19
+                                    Octobre 2001 en Europe. Le jeu s'est écoulé à 2,54 millions d'exemplaires dans le
+                                    monde.
+                                    Pokémon Stadium 2 est la suite de Pokémon Stadium et comme Stadium il n'est pas une
+                                    aventure et c'est le meme principe. la progression du jeu se fait uniquement en
+                                    remportant les Coupes dans le Stade et en complétant le Château des Champions.
+                                    Mais grâce au Transfer Pak comme dans Pokémon Stadium ont peut envoyer ces Pokemon
+                                    de la 1G Mais aussi de la 2G.
+                                    Uniquement la 1ere Génération et la 2eme de Pokemon est disponibles dans le jeux.
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="liste_jeux">
+                                    <p>Super Smash Bros.</p>
+
+                                    <div class="owl-carousel">
+                                        <img src="image n64/Super-Smash_Bros._Logo.png" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Super_Smash_Bros_boite.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Super_Smash_Bros_titre.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Super_Smash_Bros_personnage.jpeg" class="image-galerie"
+                                            width="200" />
+                                        <img src="image n64/Super_Smash_Bros_combat.png" class="image-galerie"
+                                            width="200" />
+                                    </div>
+                                    est un jeu vidéo de combat Il est sorti le 21 Janvier 1999 au Japon, le 19 novembre
+                                    1999 en Europe. Le jeu s'est écoulé à 5,5 millions d'exemplaires dans le monde.
+                                    Super Smash Bros. est le premier jeu de la série des Super Smash Bros. Le titre est
+                                    un crossover réunissant plusieurs franchises de Nintendo, comme Mario, The Legend of
+                                    Zelda, Kirby.
+                                    Super Smash Bros. consiste en l'affrontement de nombreux personnages de Nintendo
+                                    comme Mario, Link ou Pikachu sur divers terrains, le but étant de sortir l'un ou les
+                                    adversaire(s) du ring.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="footer">
+            Site Crée et coder par Evan B avec Visual Studio Code
+        </p>
+    </footer>
+    <link rel="stylesheet" href="owl.carousel.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.js" data-cover></script>
+    <script src="js/owl.support.js" data-cover></script>
+    <script src="js/owl.autoplay.js" data-cover></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
